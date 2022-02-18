@@ -34,4 +34,29 @@ $(function () {
         $paragraph.css("color", `rgb(${r}, ${g}, ${b}`);
     });
     $container4.append($paragraph);
+
+    let $container5 = $("#step-5-container");
+    let $btn2 = $("<button>Click me!</button>");
+    let $spanDiv = $("<div></div>");
+    $container5.append($btn2);
+    $container5.append($spanDiv);
+    $btn2.on("click", function () {
+        let $span = $("<span>My name is Andrew Beaudrie, or OBP Super Gamer, or Leftover Sundriez Man <span>");
+        $spanDiv.append($span);
+    }
+    );
+
+    let friends = ["Reid", "Roderick", "Adam", "Aric", "Kurt", "ShadyParadox", "Zero-Control", "Spectre", "Veenasty", "EdgyGrandpa"];
+    let friendsAdded = 0;
+    let friendList = $("#friend-list");
+    let $btn3 = $("#friend-add");
+    console.log($btn3);
+    $btn3.on("click", function () {
+        if (friendsAdded < 10) {
+            let listItem = $("<li></li>");
+            listItem.append(friends[friendsAdded]);
+            friendList.append(listItem);
+            friendsAdded += 1;
+        }
+    });
 });

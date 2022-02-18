@@ -47,7 +47,6 @@ btn3.addEventListener("click", function()
 });
 container5.appendChild(spanDiv);
 
-
 let friends = ["Reid", "Roderick", "Adam", "Aric", "Kurt", "ShadyParadox", "Zero-Control", "Spectre", "Veenasty", "EdgyGrandpa"];
 let friendsAdded = 0;
 
